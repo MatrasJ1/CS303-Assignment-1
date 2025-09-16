@@ -70,6 +70,7 @@ void push_back(int arr[], int& size) {
 			throw std::out_of_range("Array full. Could not add value.");
 		}
 		arr[size] = val; // assign last index of array with user input
+		std::cout << val << " added to array." << std::endl;
 		size++; // increase "size" or number of items in array
 	}
 	catch (std::invalid_argument e) {
